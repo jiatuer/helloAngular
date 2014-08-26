@@ -5,8 +5,8 @@
         <script src="scripts/controller.js"></script>
     </head>
     <body>
-    	<div ng-controller='HelloController'>
-        	<p>{{greeting.text}},world!</p>
-        </div>
+        Your name: <input type="text" ng-model="yourname" placeholder="World">
+        <hr>
+        Hello {{yourname || 'World'}}!
     </body>
 </html>
